@@ -16,6 +16,8 @@ function App() {
     <Suspense fallback={<div>Loading Component A...</div>}>
     <ComponentA/>
     </Suspense>
+    </ErrorBoundary>
+    <ErrorBoundary>
     <Suspense fallback={<div>Loading Component B...</div>}>
     <ComponentB/>
     </Suspense>
